@@ -14,3 +14,9 @@ MQTT-Client = jedes Gerät, vom Server bis zum Microcontroller,
 Subscribe-Nachricht = ein Client sendet eine SUBSCRIBE-Nachricht an den MQTT-Broker 
   um über Themen von Interesse informiert zu werden. 
   Diese Nachricht besteht aus einem eindeutigen Bezeichner und einer Liste aus Abonnements.
+
+Das Topic übersetzt Thema, wird vom Broker zum Filtern von Nachrichten aller Clients verwendet. 
+Das Topic besteht aus einer oder mehreren Themenebenen. Jede Themenebene wird durch einen Schrägstrich (/) getrennt. 
+Wenn ein Client ein Topic abonniert, kann er genau das Topic einer veröffentlichten Nachricht abonnieren oder er kann Platzhalter verwenden, um mehrere Topics gleichzeitig zu abonnieren. 
+
+Publish-Nachricht bezeichnet eine Nachricht, die ein MQTT-Client an einen MQTT-Broker sendet, um sie an alle Clients zu verteilen, die sich für dieses spezifische Thema (Topic) abonniert haben+
