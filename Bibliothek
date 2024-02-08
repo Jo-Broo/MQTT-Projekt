@@ -5,7 +5,8 @@ MQTT (Message Queuing Telemetry Protocol) ist ein Netzwerkprotokoll für die Kom
   und minmale Bandbreite, bei der Kommunikation zwischen Satelit und Ölpipelines entwickelt und später wurde der primäre 
   Fokus auf das Internet of Things und dessen Anwendungsfälle gelegt.
 
-MQTT-Broker = 
+MQTT-Broker/Server = Aufgabe des Brokers ist das Filtern aller eingehenden Nachrichten, sowie
+  das verteilen an die Abonennten.
 
 MQTT-Client = jedes Gerät, vom Server bis zum Microcontroller, 
   auf dem eine MQTT-Bibliothek läuft und das über ein Netzwerk kommuniziert.
