@@ -8,4 +8,10 @@ Dokumentation
 - Versuch Verbindungsaufbau (fehlgeschlagen)
 - Broker Dienst gestartet
 - publish Nachricht erstellt 
+  neue Topic erstellt : "Test"
+  Daten auf dem Topic gepublished : 25
 - subscribe Nachricht erstellt
+  Topic "Test" subscribed
+  neue Daten gesendet : 25
+  Daten auf Client empfangen : 25
+- Broker auf offentlich gestellt und mit anderen Clients aus der Gruppe getestet
