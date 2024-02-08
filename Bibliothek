@@ -1,2 +1,7 @@
 Bibliothek - Begriffe, Definitionen usw.
 
+MQTT (Message Queuing Telemetry Protocol) ist ein Netzwerkprotokoll für die Kommunikation zwischen Maschinen bzw. von Machine zu Machine (M2M).
+  Es wurde 1999 von Dr. Andy Stanford-Clark und Arlen Nipper erfunden. Das Protokoll wurde für minimalen Batterieverlust
+  und minmale Bandbreite, bei der Kommunikation zwischen Satelit und Ölpipelines entwickelt und später wurde der primäre 
+  Fokus auf das Internet of Things und dessen Anwendungsfälle gelegt.
+
