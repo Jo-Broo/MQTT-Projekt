@@ -20,3 +20,23 @@ Das Topic besteht aus einer oder mehreren Themenebenen. Jede Themenebene wird du
 Wenn ein Client ein Topic abonniert, kann er genau das Topic einer veröffentlichten Nachricht abonnieren oder er kann Platzhalter verwenden, um mehrere Topics gleichzeitig zu abonnieren. 
 
 Publish-Nachricht bezeichnet eine Nachricht, die ein MQTT-Client an einen MQTT-Broker sendet, um sie an alle Clients zu verteilen, die sich für dieses spezifische Thema (Topic) abonniert haben+
+
+Payload:
+
+Jeder Broker verteilt Nachrichten die einen Topic besitzen und, logischerweise, einen Nachrichteninhalt. Dies ist der Payload.
+Obwohl dem Payload keine Struktur vorgeschrieben ist, sollte man sich an eine gewisse Struktur binden damit dieser von anderen Geräten und Software gelesen werden kann.
+Mögliche Optionen wären unter anderem JSON, XML oder OPC UA. Falls die Struktur festgelegt wurde hat dies sen Vorteil das es auch zu einer Reibungslosen kommunikation unter den Geräten kommt.
+
+Quality of Service
+Der Quality of Service gibt an, wie sicher eine Nachricht schlussendlich zugestellt werden soll. Insgesamt gibt es drei verschiedene Stufen, von 0 bis 2
+
+Stufe 0:
+Es wird höchstens einmal übertragen.
+
+Stufe 1:
+Es wird mindestens einmal übertragen.
+
+Stufe 2:
+Es wird genau einmal übertragen.
+
+
