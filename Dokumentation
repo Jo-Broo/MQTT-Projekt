@@ -1,0 +1,11 @@
+Dokumentation
+
+08.02.2024
+- Begriffsdefinition und Erklärungen 
+- Versuch Zugriff auf Raspberry Pi per SSH
+- MQTT Broker Mosquito 2.0.18 installiert
+- MQTT Fx installiert
+- Versuch Verbindungsaufbau (fehlgeschlagen)
+- Broker Dienst gestartet
+- publish Nachricht erstellt 
+- subscribe Nachricht erstellt
