@@ -29,5 +29,14 @@ Dokumentation - Florian Diehle, Cornelius Müller, Niklas Soika, Jonas Wolf
 18.04.2024
 -Neue Installation von MQTT wegen Abwesentheit von Jonas Wolf dem Chief Programmer
 -Vebindungsaufbau (erfolgreich)
-- Test publish
--Installation von Node Red
+-Test publish
+-Installation von Node Red (erfolgreich)
+-Update Node Red auf neuste Version
+-Verbindung mit Node Red über localhost 
+-Node Red Verbindung mit MQTT Server 
+-Installation Node Red Dashboard
+-Erstellen Textfeld für die gesendete Temperatur
+-Erstellen von einem Diagramm für die Ausgabe der Temperatur
+-Anzeigen von Temperatur im Dashboard (erfolgreich)
+-Installation Datenbank
+
