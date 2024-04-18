@@ -15,3 +15,13 @@ Dokumentation
   neue Daten gesendet : 25
   Daten auf Client empfangen : 25
 - Broker auf offentlich gestellt und mit anderen Clients aus der Gruppe getestet
+
+11.04.2024
+
+-ESP-Sketch geschrieben
+-testen des publishen über den ESP
+-Node-JS installiert für Node-Red
+-install von Node-Red
+-hat nicht funktionert (Server startet nicht) -> erneuter Ablauf des installs
+-Versuch bei Cornelius zu installieren -> Abgebrochen
+-Update des Schaubildes für MQTT Broker
