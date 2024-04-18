@@ -1,4 +1,4 @@
-Dokumentation
+Dokumentation - Florian Diehle, Cornelius Müller, Niklas Soika, Jonas Wolf
 
 08.02.2024
 - Begriffsdefinition und Erklärungen 
@@ -17,11 +17,17 @@ Dokumentation
 - Broker auf offentlich gestellt und mit anderen Clients aus der Gruppe getestet
 
 11.04.2024
-
 -ESP-Sketch geschrieben
 -testen des publishen über den ESP
+-auf Mosquito gepublished als Test
 -Node-JS installiert für Node-Red
 -install von Node-Red
 -hat nicht funktionert (Server startet nicht) -> erneuter Ablauf des installs
 -Versuch bei Cornelius zu installieren -> Abgebrochen
 -Update des Schaubildes für MQTT Broker
+
+18.04.2024
+-Neue Installation von MQTT wegen Abwesentheit von Jonas Wolf dem Chief Programmer
+-Vebindungsaufbau (erfolgreich)
+- Test publish
+-Installation von Node Red
