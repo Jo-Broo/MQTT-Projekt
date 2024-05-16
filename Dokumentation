@@ -109,3 +109,8 @@ Es wird mindestens einmal übertragen.
 
 Stufe 2:
 Es wird genau einmal übertragen.
+
+JSON:
+JSON (JavaScript Object Notation) ist ein shlankes Datenaustauschformat, das für Menschen einfach zu lesen
+und zu schreiben und für Maschinen einfach zu parsen (Analysieren von Datenstrukturen) und
+zu generieren ist.
