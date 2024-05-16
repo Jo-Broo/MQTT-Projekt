@@ -27,7 +27,7 @@ Dokumentation - Florian Diehle, Cornelius Müller, Niklas Soika, Jonas Wolf
 -Update des Schaubildes für MQTT Broker
 
 18.04.2024_________________________________________________________________________
--Neue Installation von MQTT wegen Abwesentheit von Jonas Wolf dem Chief Programmer
+-Neue Installation von MQTT wegen Abwesentheit von Jonas Wolf
 -Vebindungsaufbau (erfolgreich)
 -Test publish
 -Installation von Node Red (erfolgreich)
