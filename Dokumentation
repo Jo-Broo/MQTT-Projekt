@@ -15,6 +15,7 @@ Dokumentation - Florian Diehle, Cornelius Müller, Niklas Soika, Jonas Wolf
   neue Daten gesendet : 25
   Daten auf Client empfangen : 25
 - Broker auf offentlich gestellt und mit anderen Clients aus der Gruppe getestet
+-schreiben Dokumentation
 
 11.04.2024_________________________________________________________________________
 -ESP-Sketch geschrieben
@@ -25,6 +26,7 @@ Dokumentation - Florian Diehle, Cornelius Müller, Niklas Soika, Jonas Wolf
 -hat nicht funktionert (Server startet nicht) -> erneuter Ablauf des installs
 -Versuch bei Cornelius zu installieren -> Abgebrochen
 -Update des Schaubildes für MQTT Broker
+-schreiben Dokumentation
 
 18.04.2024_________________________________________________________________________
 -Neue Installation von MQTT wegen Abwesentheit von Jonas Wolf
@@ -32,12 +34,25 @@ Dokumentation - Florian Diehle, Cornelius Müller, Niklas Soika, Jonas Wolf
 -Test publish
 -Installation von Node Red (erfolgreich)
 -Update Node Red auf neuste Version
+-Start Node Red
 -Verbindung mit Node Red über localhost 
 -Node Red Verbindung mit MQTT Server 
 -Installation Node Red Dashboard
--Erstellen Textfeld für die gesendete Temperatur
--Erstellen von einem Diagramm für die Ausgabe der Temperatur
+-Erstellen Textfeld für die gesendete Temperatur | Grad Celsius
+-Erstellen von einem Diagramm für die Ausgabe der Temperatur | Grad Celsius
+-Erstellen Textfeld für die gesendete Temperatur | Grad Fahrenheit
+-Erstellen Diagramm für die Ausgabe der Temperatur | Grad Fahrenheit
 -Anzeigen von Temperatur im Dashboard (erfolgreich)
--Installation Datenbank
--Eintragen der Werte in die Datenbank
+-schreiben Dokumentation
 
+16.05.2024_________________________________________________________________________
+-Wiederaufbau Temperatursenor und Esp32
+-Start MQTT auf Laptop Jonas
+-Start Node Red auf Laptop Cornelius
+-Start Mosquito auf Laptop Jonas
+-Test Publish (nicht erfolgreich)
+-Neuer Test (erfolgreich)
+  auf Kanal Jonas Message: Test -> empfangen auf Cornelius Laptop in Kanal Jonas
+-Erstellen Dashboard in NodeRed für Ausgabe von Temperaturen
+-Erstellen Textfeld für die gesendete Temperatur vom Esp32 | Grad Celsius
+-Erstellen von einem Diagramm für die gesendete Temperatur vom Esp32 | Grad Celsius
