@@ -2,20 +2,27 @@
 #include <ArduinoJson.hpp>  
 #include <WiFi.h>                                 
 #include <PubSubClient.h>                         
-#include <Wire.h>                                 
-#include "DHT.h" 
-#define DHTTYPE DHT11                            
-#define DHTPIN 4
+#include <Wire.h>  
+#include <OneWire.h>
+#include <DallasTemperature.h>                               
+
+// Data wire is conntec to the Arduino digital pin 4
+#define ONE_WIRE_BUS 4
+
+// Setup a oneWire instance to communicate with any OneWire devices
+OneWire oneWire(ONE_WIRE_BUS);
+
+// Pass our oneWire reference to Dallas Temperature sensor 
+DallasTemperature sensors(&oneWire);
 
 const char* ssid = "WLAN-ESP";           
 const char* password = "agsesp32";    
-const char* mqtt_server = "10.0.42.10";       
+const char* mqtt_server = "10.0.42.12";       
 const char* topic = "Temperatur";              
 const char* client_id = "Sensor";
 
 WiFiClient wifi_client;                           
 PubSubClient client(wifi_client);
-DHT dht(DHTPIN, DHTTYPE);
 
 void setup() {
   Serial.begin(115200);                           
@@ -39,27 +46,29 @@ void setup() {
 
   client.setServer(mqtt_server, 1883);  
 
-  dht.begin();              
+  sensors.begin();
 }
 
 void loop() {
   if (!client.connected()) {                      
     reconnect();                                  
   }
-
-  StaticJsonDocument<80> doc;                   
-  char output[80];                              
-
-  float temp = dht.readTemperature();           
-  float humidity = dht.readHumidity();          
+  sensors.requestTemperatures();
   
-  doc["id"] = client_id;                        
-  doc["t"] = temp;                              
-  doc["h"] = humidity;                          
+  float tempC = sensors.getTempCByIndex(0);      
+  float tempF = sensors.getTempFByIndex(0);
 
-  serializeJson(doc, output);                   
-  Serial.println(output);                       
-  client.publish(topic, output);
+  char tempCString[8];
+  char tempFString[8];
+  
+  dtostrf(tempC, 6, 2, tempCString);
+  dtostrf(tempF, 6, 2, tempFString);
+
+  Serial.println(tempCString);
+  Serial.println(tempFString);
+  
+  client.publish("Temperature_Celsius", tempCString);
+  client.publish("Temperature_Fahrenheit", tempFString);
 
   delay(2000);
 }
