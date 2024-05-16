@@ -1,6 +1,6 @@
 Dokumentation - Florian Diehle, Cornelius Müller, Niklas Soika, Jonas Wolf
 
-08.02.2024___________________________________________________________________________________________________
+08.02.2024_________________________________________________________________________
 - Begriffsdefinition und Erklärungen 
 - Versuch Zugriff auf Raspberry Pi per SSH
 - MQTT Broker Mosquito 2.0.18 installiert
@@ -8,28 +8,28 @@ Dokumentation - Florian Diehle, Cornelius Müller, Niklas Soika, Jonas Wolf
 - Versuch Verbindungsaufbau (fehlgeschlagen)
 - Broker Dienst gestartet
 - publish Nachricht erstellt 
-  neue Topic erstellt : "Test"
-  Daten auf dem Topic gepublished : 25
+  neue Topic erstellt: "Test"
+  Daten auf dem Topic gepublished: 25
 - subscribe Nachricht erstellt
   Topic "Test" subscribed
-  neue Daten gesendet : 25
-  Daten auf Client empfangen : 25
-- Broker auf offentlich gestellt und mit anderen Clients aus der Gruppe getestet
+  neue Daten gesendet: 25
+  Daten auf Client empfangen: 25
+- Broker auf öffentlich gestellt und mit anderen Clients aus der Gruppe getestet
 -schreiben Dokumentation
 
-11.04.2024___________________________________________________________________________________________________
+11.04.2024_________________________________________________________________________
 -ESP-Sketch geschrieben
 -testen des publishen über den ESP
 -auf Mosquito gepublished als Test
 -Node-JS installiert für Node-Red
 -install von Node-Red
--hat nicht funktionert (Server startet nicht) -> erneuter Ablauf des installs
+-hat nicht funktioniert (Server startet nicht) -> erneuter Ablauf des installs
 -Versuch bei Cornelius zu installieren -> Abgebrochen
 -Update des Schaubildes für MQTT Broker
 -schreiben Dokumentation
 
-18.04.2024___________________________________________________________________________________________________
--Neue Installation von MQTT wegen Abwesentheit von Jonas Wolf
+18.04.2024_________________________________________________________________________
+-Neue Installation von MQTT wegen Abwesenheit von Jonas Wolf
 -Vebindungsaufbau (erfolgreich)
 -Test publish
 -Installation von Node Red (erfolgreich)
@@ -45,7 +45,7 @@ Dokumentation - Florian Diehle, Cornelius Müller, Niklas Soika, Jonas Wolf
 -Anzeigen von Temperatur im Dashboard (erfolgreich)
 -schreiben Dokumentation
 
-16.05.2024___________________________________________________________________________________________________
+16.05.2024_________________________________________________________________________
 -Wiederaufbau Temperatursenor und Esp32
 -Start MQTT auf Laptop Jonas
 -Start Node Red auf Laptop Cornelius
@@ -53,31 +53,28 @@ Dokumentation - Florian Diehle, Cornelius Müller, Niklas Soika, Jonas Wolf
 -Test Publish (nicht erfolgreich)
 -Neuer Test (erfolgreich)
   auf Topic Jonas Message: Test -> empfangen auf Cornelius Laptop in Topic Jonas
--Code umgeschrieben weil Jonas seinen eigenen Sensor der vorher verwendet wurde vergessen hat
+-Code umgeschrieben, weil Jonas seinen eigenen Sensor der vorher verwendet wurde vergessen hat
 -Erstellen von Dashboard in NodeRed für Ausgabe von Temperaturen
 -Erstellen von Textfeld für die gesendete Temperatur vom Esp32 | Grad Celsius
 -Erstellen von einem Diagramm für die gesendete Temperatur vom Esp32 | Grad Celsius
--Anpassen von Code für Celsius und Fahrenheit auf den topics Temperature_Celsius und Temperature_Fahrenheit
+-Anpassen von Code für Celsius und Fahrenheit auf den Topics Temperature_Celsius und Temperature_Fahrenheit
 -Erstellen von Textfeld für die gesendete Temperatur vom Esp32 | Grad Fahrenheit
 -Erstellen von einem Diagramm für die gesendete Temperatur vom Esp32 | Grad Fahrenheit
 -Node Red MySql Modul gesucht
 -node-red-mysql-r2 installiert
 -Erstellen neuer Datenbank in Heidi SQL mit Namen NodeRed (fehlgeschlagen)
 -installieren von Postgresql
--Posgres Anbindung in Node Red 
--Einfügen der subscribten Werte in neue Tabellen
 -schreiben Dokumentation
-
 
 Begriffe, Definitionen usw.
 
 MQTT (Message Queuing Telemetry Protocol) ist ein Netzwerkprotokoll für die Kommunikation zwischen Maschinen bzw. von Machine zu Machine (M2M).
   Es wurde 1999 von Dr. Andy Stanford-Clark und Arlen Nipper erfunden. Das Protokoll wurde für minimalen Batterieverlust
-  und minmale Bandbreite, bei der Kommunikation zwischen Satelit und Ölpipelines entwickelt und später wurde der primäre 
+  und minimale Bandbreite, bei der Kommunikation zwischen Satellit und Ölpipelines entwickelt und später wurde der primäre 
   Fokus auf das Internet of Things und dessen Anwendungsfälle gelegt.
 
 MQTT-Broker/Server = Aufgabe des Brokers ist das Filtern aller eingehenden Nachrichten, sowie
-  das verteilen an die Abonennten.
+  das verteilen an die Abonnenten.
 
 MQTT-Client = jedes Gerät, vom Server bis zum Microcontroller, 
   auf dem eine MQTT-Bibliothek läuft und das über ein Netzwerk kommuniziert.
@@ -96,7 +93,7 @@ Payload:
 
 Jeder Broker verteilt Nachrichten die einen Topic besitzen und, logischerweise, einen Nachrichteninhalt. Dies ist der Payload.
 Obwohl dem Payload keine Struktur vorgeschrieben ist, sollte man sich an eine gewisse Struktur binden damit dieser von anderen Geräten und Software gelesen werden kann.
-Mögliche Optionen wären unter anderem JSON, XML oder OPC UA. Falls die Struktur festgelegt wurde hat dies sen Vorteil das es auch zu einer Reibungslosen kommunikation unter den Geräten kommt.
+Mögliche Optionen wären unter anderem JSON, XML oder OPC UA. Falls die Struktur festgelegt wurde hat dies sen Vorteil das es auch zu einer Reibungslosen Kommunikation unter den Geräten kommt.
 
 Quality of Service
 Der Quality of Service gibt an, wie sicher eine Nachricht schlussendlich zugestellt werden soll. Insgesamt gibt es drei verschiedene Stufen, von 0 bis 2
@@ -111,6 +108,5 @@ Stufe 2:
 Es wird genau einmal übertragen.
 
 JSON:
-JSON (JavaScript Object Notation) ist ein shlankes Datenaustauschformat, das für Menschen einfach zu lesen
-und zu schreiben und für Maschinen einfach zu parsen (Analysieren von Datenstrukturen) und
-zu generieren ist.
+JSON (JavaScript Object Notation) ist ein schlankes Datenaustauschformat, das für Menschen einfach zu lesen und zu schreiben und für Maschinen einfach zu parsen (Analysieren von Datenstrukturen) und zu generieren ist.
+
