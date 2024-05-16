@@ -38,9 +38,9 @@ Dokumentation - Florian Diehle, Cornelius Müller, Niklas Soika, Jonas Wolf
 -Verbindung mit Node Red über localhost 
 -Node Red Verbindung mit MQTT Server 
 -Installation Node Red Dashboard
--Erstellen Textfeld für die gesendete Temperatur | Grad Celsius
+-Erstellen von Textfeld für die gesendete Temperatur | Grad Celsius
 -Erstellen von einem Diagramm für die Ausgabe der Temperatur | Grad Celsius
--Erstellen Textfeld für die gesendete Temperatur | Grad Fahrenheit
+-Erstellen von Textfeld für die gesendete Temperatur | Grad Fahrenheit
 -Erstellen Diagramm für die Ausgabe der Temperatur | Grad Fahrenheit
 -Anzeigen von Temperatur im Dashboard (erfolgreich)
 -schreiben Dokumentation
@@ -54,9 +54,10 @@ Dokumentation - Florian Diehle, Cornelius Müller, Niklas Soika, Jonas Wolf
 -Neuer Test (erfolgreich)
   auf Topic Jonas Message: Test -> empfangen auf Cornelius Laptop in Topic Jonas
 -Code umgeschrieben weil Jonas seinen eigenen Sensor der vorher verwendet wurde vergessen hat
--Erstellen Dashboard in NodeRed für Ausgabe von Temperaturen
--Erstellen Textfeld für die gesendete Temperatur vom Esp32 | Grad Celsius
+-Erstellen von Dashboard in NodeRed für Ausgabe von Temperaturen
+-Erstellen von Textfeld für die gesendete Temperatur vom Esp32 | Grad Celsius
 -Erstellen von einem Diagramm für die gesendete Temperatur vom Esp32 | Grad Celsius
 -Anpassen von Code für Celsius und Fahrenheit auf den topics Temperature_Celsius und Temperature_Fahrenheit
--Erstellen Textfeld für die gesendete Temperatur vom Esp32 | Grad Fahrenheit
+-Erstellen von Textfeld für die gesendete Temperatur vom Esp32 | Grad Fahrenheit
 -Erstellen von einem Diagramm für die gesendete Temperatur vom Esp32 | Grad Fahrenheit
+-schreiben Dokumentation
