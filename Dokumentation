@@ -64,4 +64,6 @@ Dokumentation - Florian Diehle, Cornelius Müller, Niklas Soika, Jonas Wolf
 -node-red-mysql-r2 installiert
 -Erstellen neuer Datenbank in Heidi SQL mit Namen NodeRed (fehlgeschlagen)
 -installieren von Postgresql
+-Posgres Anbindung in Node Red 
+-Einfügen der subscribten Werte in neue Tabellen
 -schreiben Dokumentation
