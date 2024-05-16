@@ -52,7 +52,7 @@ Dokumentation - Florian Diehle, Cornelius Müller, Niklas Soika, Jonas Wolf
 -Start Mosquito auf Laptop Jonas
 -Test Publish (nicht erfolgreich)
 -Neuer Test (erfolgreich)
-  auf Kanal Jonas Message: Test -> empfangen auf Cornelius Laptop in Kanal Jonas
+  auf Topic Jonas Message: Test -> empfangen auf Cornelius Laptop in Topic Jonas
 -Erstellen Dashboard in NodeRed für Ausgabe von Temperaturen
 -Erstellen Textfeld für die gesendete Temperatur vom Esp32 | Grad Celsius
 -Erstellen von einem Diagramm für die gesendete Temperatur vom Esp32 | Grad Celsius
