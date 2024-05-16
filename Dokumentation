@@ -60,4 +60,8 @@ Dokumentation - Florian Diehle, Cornelius Müller, Niklas Soika, Jonas Wolf
 -Anpassen von Code für Celsius und Fahrenheit auf den topics Temperature_Celsius und Temperature_Fahrenheit
 -Erstellen von Textfeld für die gesendete Temperatur vom Esp32 | Grad Fahrenheit
 -Erstellen von einem Diagramm für die gesendete Temperatur vom Esp32 | Grad Fahrenheit
+-Node Red MySql Modul gesucht
+-node-red-mysql-r2 installiert
+-Erstellen neuer Datenbank in Heidi SQL mit Namen NodeRed (fehlgeschlagen)
+-installieren von Postgresql
 -schreiben Dokumentation
